@@ -58,6 +58,7 @@
 .home__container_center{
     @include flex(space-between, flex-start);
     margin-top: 60px;
+    
 }
 
 .socials{
@@ -79,23 +80,34 @@
 
 .home__text{
     text-align: center;
-
     h6{
         color: $main_color;
         text-shadow: 0px 0px 2px black;
         font-size: 18px;
         text-transform: uppercase;
+        margin: $m-center;
     }
     h1{
         margin-top: 10px;
         font-family: $fredokaOne;
         font-weight: normal;
         color: white;
+        margin: $m-center;
         text-shadow: 0px 0px 2px black;
         font-size: 80px;
         &::after{
             @include line;
         }
+    }
+    svg{
+        width: 80px;
+        height: 80px;
+    }
+    .arrow__about{
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: $m-center;
     }
 }
 
@@ -128,9 +140,9 @@
         }
     }
 }
-.arrow_about{
-    display: block;
-    width: 60px;
-    height: 60px;
-    margin: $m-center;
+
+.work_time{
+    width: 180px;
+    height: 10px;
+    text-orientation:upright;
 }
