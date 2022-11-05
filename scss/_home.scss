@@ -51,6 +51,7 @@
     width: 150px;
     height: 190px;
     padding-top: 20px;
+    margin: 0 30px 0 50px;
     background: radial-gradient(white, transparent 70%);
 }
 
@@ -58,7 +59,6 @@
 .home__container_center{
     @include flex(space-between, flex-start);
     margin-top: 60px;
-    
 }
 
 .socials{
@@ -100,13 +100,16 @@
         }
     }
     svg{
-        width: 80px;
-        height: 80px;
+
+        width: 60px;
+        height: 60px;
     }
     .arrow__about{
+        border: 2px solid white;
+        border-radius: 50%;
         display: block;
-        width: 80px;
-        height: 80px;
+        width: 62px;
+        height: 62px;
         margin: $m-center;
     }
 }
@@ -142,7 +145,12 @@
 }
 
 .work_time{
-    width: 180px;
-    height: 10px;
+    width: 200px;
+    height: 100px;
     text-orientation:upright;
+    font-weight: 700;
+    margin-right: -140px;
+    margin-top: 80px;
+    text-align: end;
+    rotate: -90deg;
 }
