@@ -2,4 +2,4 @@
 landing page
  WORK IN PROGRESS  !!!
  
-https://github.com/B4by-Sh4rk/landing
+ https://b4by-sh4rk.github.io/landing/
