@@ -1,3 +1,38 @@
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
 .about{
-    color: red;
+    padding-top: 200px;
+    padding-bottom: 180px;
+}
+
+.about__container{
+    @include flex(space-between, center);
+}
+
+.about__text{
+    width: 50%;
+    max-width: 800px;
+    text-align: center;
+    margin-left: 100px;
+    padding-bottom: 80px;
+}
+
+.about__img{
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    margin-right: 150px;
+    .circle{
+        right: 0;
+        transform: translate(-5%, -50%);
+    }
+    img{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.671);
+    }
 }
